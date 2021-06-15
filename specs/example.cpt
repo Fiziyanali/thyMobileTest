@@ -1,0 +1,53 @@
+Created by testinium on 6/15/2021
+
+This is a concept file with following syntax for each concept.
+# Gerekli izinlere onay ver
+* "com.android.packageinstaller:id/permission_allow_button" id li elemente tıkla
+* "2" saniye bekle
+* "com.turkishairlines.mobile:id/frPrivacy_btnAccept" id li elemente tıkla
+* "2" saniye bekle
+* "com.turkishairlines.mobile:id/dgBase_btnPositive" id li elemente tıkla
+* "2" saniye bekle
+
+# Bilet al butonuna tıkla
+* "com.turkishairlines.mobile:id/acMain_btnBooking" id li elemente tıkla
+* "2" saniye bekle
+
+# Tek yön alanını seç
+* "com.turkishairlines.mobile:id/frDashboard_tvOneWay" id li elemente tıkla
+* "2" saniye bekle
+
+# Kalkış alanına <from> ve varış alanına <to> değerlerini ata
+* "com.turkishairlines.mobile:id/frDashboard_tvFromCode" id li elemente tıkla
+* "com.turkishairlines.mobile:id/frAirportSelection_etSearch" id li elemente <from> değerini yaz
+* "2" saniye bekle
+* "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[2]" xpath li elemente tıkla
+
+* "com.turkishairlines.mobile:id/frDashboard_llTo" id li elemente tıkla
+* "com.turkishairlines.mobile:id/frAirportSelection_etSearch" id li elemente <to> değerini yaz
+* "2" saniye bekle
+* "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[2]" xpath li elemente tıkla
+* "2" saniye bekle
+
+# Tarih alanından iki gün sonrasını(18) seç
+*"com.turkishairlines.mobile:id/frDashboard_rlDeparture" id li elemente tıkla
+* "android.widget.TextView[text='18']" css li elemente tıkla
+* "com.turkishairlines.mobile:id/frDashboard_btnDone" id li elemente tıkla
+* "2" saniye bekle
+
+# Yetişkin yolcu sayısını '2' yap ve bilet ara
+* "android.widget.TextView[text='5']" css li elemente tıkla
+* "com.turkishairlines.mobile:id/frDashboard_btnSearch" id li elemente tıkla
+* "2" saniye bekle
+
+# Bilet liste sayfasını kontrol et
+* "com.turkishairlines.mobile:id/frFlightSearch_rlPageContent" id li elementi kontrol et
+* "2" saniye bekle
+
+# Listelenen ilk uçuş için Ekomoni sınıfını seç ve devam et
+* "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView[2]/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup" xpath li elemente tıkla
+* "1" saniye bekle
+* "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView[2]/android.view.ViewGroup[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup" xpath li elemente tıkla
+* "com.turkishairlines.mobile:id/frFlightSearch_btnContinue" id li elemente tıkla
+* "2" saniye bekle
+
